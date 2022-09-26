@@ -1,7 +1,7 @@
 # YTmp3-Converter
 ## Quick presentation
 Easy way to convert your favorite YouTube songs to MP3!
-Works well, fast, conveniently and selects the best quality for you.
+Works well, fast, conveniently and selects the best quality for you. It is also more secure than the regular website, that could potentially sneak harmful stuff during the download process.
 Simply put one YouTube URL per line in a text file, then run the YTmp3.bat file, and the program will do the rest for you!
 The Utility folder will keep track of the URL files you already downloaded and of the errors that might occur through the web request process.
 Note: This program is using the yt-dlp module, so the web requests are not directly handled by myself. I just created this program to automate the downloading process.

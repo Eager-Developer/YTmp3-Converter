@@ -40,7 +40,7 @@ UTILITY_FOLDER_PATH = DEFAULT_OUTPUT_BASE_DIR_PATH + UTILITY_FOLDER
 if not os.path.isdir(UTILITY_FOLDER_PATH):
     os.mkdir(UTILITY_FOLDER_PATH)
 
-# youtube-dl changes some special characters to underscore: for comparison purposes, we store them in a list
+# yt-dlp changes the forbidden characters in Windows into spaces or underscores: for comparison purposes, we store the changes in a list
 CHAR_TO_CHANGE_LIST = {
     '|': '_',
     '\\': ' ',
@@ -143,7 +143,7 @@ def main():
         with open(file, "w") as error_links_file:
             error_links_file.write("".join([url for url in error_links]))
     else:
-        file = FILENAME_PREFIX + " SAVE links.txt"
+        file = FILENAME_PREFIX + " SAVE " + LINKS_FILE_NAME
         with open(LINKS_FILE_NAME, "r+") as links_txt, open(file,"w") as save_links_txt:
             for line in links_txt:
                 save_links_txt.write(line)
