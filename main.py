@@ -12,7 +12,7 @@ def abort():
 print("--- PLEASE NOTICE - Default value is picked if you press the enter key without typing anything ---\n")
 
 # constants    
-DEFAULT_OUTPUT_FOLDER_NAME = "MP3 conversion result"
+DEFAULT_OUTPUT_FOLDER_NAME = "MP3 conversion result\\"
 
 DEFAULT_OUTPUT_BASE_DIR_PATH = "./"
 output_base_dir_path = input("Output folder path (DEFAULT = \"" + DEFAULT_OUTPUT_BASE_DIR_PATH + "\" (current directory)): ").strip()
